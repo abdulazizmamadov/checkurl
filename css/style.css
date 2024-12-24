@@ -67,6 +67,47 @@ img {
 }
 
 
+/* Header */
+.site-header {
+  border-bottom: 1px solid #eaeaea;
+}
+
+.site-header__container {
+  display: flex;
+}
+
+.site-header__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  margin-right: auto;
+}
+
+.site-header__logo img {
+  display: block;
+}
+
+.site-header__buttons {
+  display: flex;
+  align-items: center;
+}
+
+.btn {
+  padding: 12px 15px;
+  border: 0;
+  background-color: var(--blue);
+  color: #fff;
+  border-radius: 32px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn:not(:last-child) {
+  margin-right: 12px;
+}
+
+
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
 only screen and (   min--moz-device-pixel-ratio: 2),
