@@ -1,3 +1,10 @@
+/* Custom Props */
+:root {
+  --blue: #3e5efe;
+  --text-color: #2a2a33;
+  --dark: #141822; 
+}
+
 /* Font Face */
 @font-face {
   font-family: 'Inter 18pt';
