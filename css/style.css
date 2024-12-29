@@ -30,6 +30,7 @@ html {
   box-sizing: border-box;
   height: 100%;
   scroll-behavior: smooth;
+  overflow-wrap: unset;
 }
 
 *,
@@ -111,7 +112,7 @@ img {
 /* Hero */
 .hero {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 100px;
   background-color: #f1f3fc;
 }
 .hero-container {
@@ -165,6 +166,276 @@ img {
   outline: none;
 }
 
+
+/* About */
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.about__title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+.about__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about__content-img{
+  margin-right: 40px;
+}
+
+.about__content-description {
+  display: flex;
+  flex-direction: column;
+}
+
+.content-description__heading {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.content-description__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/* Why */
+.why {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.why__title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.why__content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.why__content-list {
+  width: 560px;
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.content-list__item {
+  margin-top: 0;
+  margin-bottom: 20px;
+  border-left: 2px solid var(--blue);
+  padding: 10px 20px;
+}
+
+.content-list__item p {
+  font-size: 22px;
+  font-weight: 400;
+  cursor: pointer;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.content-list__item span {
+  font-size: 16px;
+}
+
+.content-list__item-toggle {
+  display: none;
+}
+
+.why__img {
+  width: 555px;
+  height: 555px;
+}
+
+
+/* What */
+.what {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.what-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.what__title {
+  font-size: 34px;
+}
+
+.what__text {
+  font-size: 18px;
+  width: 80%;
+}
+
+
+/* How */
+.how {
+  padding-top: 70px;
+  padding-bottom: 50px;
+}
+
+.how-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.how__title {
+  font-size: 36px;
+}
+
+.how__text {
+  font-size: 18px;
+}
+
+.how__content {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.how__content-item {
+  width: 30%;
+  padding: 30px 25px;
+  border: 1px solid #e1e1e1;
+  border-radius: 12px;
+}
+
+.how__content-item span {
+  font-size: 24px;
+  border-bottom: 3px solid var(--blue);
+  color: var(--blue);
+}
+
+
+/* fqa */
+.fqa {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.fqa-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fqa__title {
+  font-size: 36px;
+  margin-top: 0;
+}
+
+.fqa__list {
+  width: 70%;
+}
+
+.fqa__list-item {
+  list-style: none;
+  padding: 20px 20px 0px;
+  border: 1px solid #e1e1e1;
+  border-radius: 16px;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.fqa__list-item::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../img/down.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 20px;
+  right: 5%;
+  cursor: pointer;
+}
+
+
+.fqa__list-item h4 {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.fqa__paragraph {
+  display: none;
+}
+.fqa__paragraph.fqa__paragraph-event {
+  display: block;
+}
+
+
+/* footer */
+.footer {
+  background-color: var(--dark);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__title {
+  color: #fff;
+  font-size: 20px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: start;
+}
+
+.footer__social-item {
+  list-style: none;
+  padding: 0px;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__social-item img {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.footer__divider {
+  width: 100%;
+}
+
+.footer__text {
+  color: #fff;
+}
 
 @media
 only screen and (-webkit-min-device-pixel-ratio: 2),
